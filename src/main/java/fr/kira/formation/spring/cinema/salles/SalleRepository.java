@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface SalleRepository extends JpaRepository<Salle, Integer> {
 
-  /*@Query("SELECT s FROM Salle s LEFT JOIN FETCH Seance WHERE Seance.date = :date")
-  List<Salle> findByDate(@Param("date") LocalDate date);*/
+  @Query("SELECT s FROM Salle s LEFT JOIN FETCH Seance WHERE Seance.date = :date")
+  List<Salle> findByDate(@Param("date") LocalDate date);
 }

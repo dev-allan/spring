@@ -32,6 +32,4 @@ public class SeanceService {
     public void deleteById(Integer integer) {
         repository.deleteById(integer);
     }
-
-
 }

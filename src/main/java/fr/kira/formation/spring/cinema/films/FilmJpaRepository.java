@@ -21,6 +21,6 @@ public interface FilmJpaRepository extends JpaRepository<Film, Integer> {
 
     List<Film> findByDateSortie(LocalDate date_Sortie);
 
-    @Query("SELECT f FROM Film f LEFT JOIN Seance s WHERE s.date = :date")
+    @Query("SELECT f FROM Film f LEFT JOIN FETCH Seance s ON f.id = s.film.id WHERE s.date = :date")
     List<Film> findByDate(@Param("date") LocalDate date);
 }
