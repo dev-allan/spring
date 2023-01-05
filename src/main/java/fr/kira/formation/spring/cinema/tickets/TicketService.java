@@ -1,12 +1,15 @@
 package fr.kira.formation.spring.cinema.tickets;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.kira.formation.spring.cinema.seances.Seance;
 import fr.kira.formation.spring.cinema.seances.SeanceService;
+import fr.kira.formation.spring.cinema.tickets.dto.TicketDto;
 import jakarta.transaction.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.util.List;
 
 @Service
 public class TicketService {
@@ -50,5 +53,9 @@ public class TicketService {
     return repository.findAll();
   }
 
-
+  public List<Ticket> findBySeance(int idSeance){
+    Seance seance = seanceService.findById(idSeance);
+    List<Ticket> tickets = repository.findBySeance(seance);
+    return tickets;
+  }
 }
