@@ -10,10 +10,11 @@ import java.util.List;
 public interface SalleRepository extends JpaRepository<Salle, Integer> {
 
   /**
-   * Doit afficher les salles disponibles à une date données (salle où aucune séance n'est programmée)
+   * Doit afficher les salles prises à une date données (salle où une séance est programmée)
    * @param date
    * @return
    */
-  @Query("SELECT sa FROM Salle sa LEFT JOIN FETCH Seance se ON sa.id = se.salle.id WHERE se.date = :date")
+  //@Query("SELECT sa FROM Salle sa LEFT JOIN FETCH Seance se ON sa.id = se.salle.id WHERE se.date = :date")
+  @Query("SELECT sa FROM Salle sa LEFT JOIN Seance se ON sa.id = se.salle.id WHERE se.date = :date")
   List<Salle> findByDate(@Param("date") LocalDate date);
 }

@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,5 +32,9 @@ public class SeanceService {
 
     public void deleteById(Integer integer) {
         repository.deleteById(integer);
+    }
+
+    public List<Seance> findByDate(LocalDate date){
+        return this.repository.findByDate(date);
     }
 }

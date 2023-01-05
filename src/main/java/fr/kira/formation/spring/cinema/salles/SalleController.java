@@ -38,7 +38,7 @@ public class SalleController {
 
     @GetMapping("byDate/{date}")
     public List<Salle> findByDate(@PathVariable LocalDate date){
-        return service.findByDate(date);
+        return service.findSallesAvailableByDate(date);
     }
 
 }

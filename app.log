@@ -9849,3 +9849,49 @@ Caused by: org.hibernate.query.SemanticException: Could not interpret path expre
 2023-01-05T18:47:45.553+01:00  WARN 27652 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-01-05T18:47:49.333+01:00  WARN 27652 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Exception: 404 NOT_FOUND
 2023-01-05T18:47:49.336+01:00  WARN 27652 --- [http-nio-8080-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND]
+2023-01-05T18:54:42.222+01:00  WARN 23128 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T18:54:44.903+01:00  WARN 23128 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T18:54:50.344+01:00  WARN 23128 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Exception: 409 CONFLICT "Il n'y a plus de places disponibles pour cette séance"
+2023-01-05T18:54:50.348+01:00  WARN 23128 --- [http-nio-8080-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 409 CONFLICT "Il n'y a plus de places disponibles pour cette séance"]
+2023-01-05T18:55:57.459+01:00  WARN 23128 --- [http-nio-8080-exec-5] f.k.f.s.cinema.aop.ControllerAspect      : Exception: 404 NOT_FOUND
+2023-01-05T18:55:57.460+01:00  WARN 23128 --- [http-nio-8080-exec-5] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND]
+2023-01-05T19:07:55.009+01:00 ERROR 23128 --- [http-nio-8080-exec-1] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:08:02.378+01:00 ERROR 23128 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:08:06.187+01:00 ERROR 23128 --- [http-nio-8080-exec-3] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:15:49.138+01:00  WARN 1040 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:15:53.040+01:00  WARN 1040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:16:22.138+01:00 ERROR 1040 --- [http-nio-8080-exec-4] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:16:38.677+01:00 ERROR 1040 --- [http-nio-8080-exec-5] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:16:43.683+01:00 ERROR 1040 --- [http-nio-8080-exec-8] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:17:16.962+01:00  WARN 5884 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:17:19.879+01:00  WARN 5884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:17:32.049+01:00 ERROR 5884 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:17:42.536+01:00 ERROR 5884 --- [http-nio-8080-exec-3] f.k.f.s.cinema.aop.ControllerAspect      : Before findAll
+2023-01-05T19:20:31.470+01:00  WARN 22972 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:20:33.839+01:00  WARN 22972 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:20:42.945+01:00 ERROR 22972 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:21:24.817+01:00  WARN 4524 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:21:27.142+01:00  WARN 4524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:21:45.909+01:00 ERROR 4524 --- [http-nio-8080-exec-1] f.k.f.s.cinema.aop.ControllerAspect      : Before findAll
+2023-01-05T19:21:48.940+01:00 ERROR 4524 --- [http-nio-8080-exec-3] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:23:09.495+01:00  WARN 1752 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:23:11.766+01:00  WARN 1752 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:23:17.893+01:00 ERROR 1752 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:28:44.147+01:00  WARN 10796 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:28:46.538+01:00  WARN 10796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:28:51.220+01:00 ERROR 10796 --- [http-nio-8080-exec-1] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:29:35.456+01:00 ERROR 10796 --- [http-nio-8080-exec-4] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:30:54.339+01:00  WARN 28832 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:30:56.609+01:00  WARN 28832 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:31:21.406+01:00 ERROR 28832 --- [http-nio-8080-exec-1] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:46:05.481+01:00  WARN 27736 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:46:08.135+01:00  WARN 27736 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:46:29.469+01:00 ERROR 27736 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:46:55.430+01:00  WARN 16052 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:46:57.938+01:00  WARN 16052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:47:02.490+01:00 ERROR 16052 --- [http-nio-8080-exec-2] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:54:11.570+01:00  WARN 26044 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-05T19:54:14.306+01:00  WARN 26044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-05T19:54:17.670+01:00 ERROR 26044 --- [http-nio-8080-exec-1] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:54:38.846+01:00 ERROR 26044 --- [http-nio-8080-exec-3] f.k.f.s.cinema.aop.ControllerAspect      : Before findByDate
+2023-01-05T19:55:24.944+01:00 ERROR 26044 --- [http-nio-8080-exec-4] f.k.f.s.cinema.aop.ControllerAspect      : Before findAll

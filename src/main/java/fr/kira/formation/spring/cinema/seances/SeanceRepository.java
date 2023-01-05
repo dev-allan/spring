@@ -11,4 +11,5 @@ import java.util.List;
 
 //@RepositoryRestResource(collectionResourceRel = "seances", path = "seances")
 public interface SeanceRepository extends JpaRepository<Seance, Integer> {
+  List<Seance> findByDate(LocalDate date);
 }
