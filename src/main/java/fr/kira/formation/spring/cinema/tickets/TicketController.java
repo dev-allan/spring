@@ -14,8 +14,8 @@ public class TicketController {
         }
 
         @PostMapping
-        public Ticket save(@RequestBody Ticket entity) {
-            return service.save(entity);
+        public Ticket save(@RequestBody Ticket ticket) {
+            return service.save(ticket);
         }
 
         @GetMapping("{id}")

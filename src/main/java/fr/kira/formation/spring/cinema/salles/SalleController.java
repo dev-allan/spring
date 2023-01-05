@@ -36,9 +36,9 @@ public class SalleController {
         service.deleteById(id);
     }
 
-    /*@GetMapping("byDate/{date}")
+    @GetMapping("byDate/{date}")
     public List<Salle> findByDate(@PathVariable LocalDate date){
         return service.findByDate(date);
-    }*/
+    }
 
 }
