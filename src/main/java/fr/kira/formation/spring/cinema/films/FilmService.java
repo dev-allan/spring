@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -156,5 +157,12 @@ public class FilmService {
         Film film = jpaRepository.findById(id).orElseThrow();
         film.getRealisateurs().add(realisateur);
         jpaRepository.save(film);
+    }
+
+    public List<Film> findByDate(LocalDate date){
+        System.out.println(date);
+        System.out.println(jpaRepository.findAll().get(1).getDateSortie());
+        System.out.println(jpaRepository.findByDateSortie(date));
+        return jpaRepository.findByDateSortie(date);
     }
 }
