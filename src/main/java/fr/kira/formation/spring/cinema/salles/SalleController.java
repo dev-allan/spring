@@ -2,6 +2,9 @@ package fr.kira.formation.spring.cinema.salles;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @RestController
 @RequestMapping("salles")
 @CrossOrigin
@@ -32,5 +35,10 @@ public class SalleController {
     public void deleteById(Integer id) {
         service.deleteById(id);
     }
+
+    /*@GetMapping("byDate/{date}")
+    public List<Salle> findByDate(@PathVariable LocalDate date){
+        return service.findByDate(date);
+    }*/
 
 }

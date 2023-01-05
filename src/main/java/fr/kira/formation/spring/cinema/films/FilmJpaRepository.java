@@ -1,6 +1,8 @@
 package fr.kira.formation.spring.cinema.films;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -18,4 +20,7 @@ public interface FilmJpaRepository extends JpaRepository<Film, Integer> {
     List<Film> findByTitreContainingIgnoreCaseAndDureeBetween(String titre, int dureeStart, int dureeEnd);
 
     List<Film> findByDateSortie(LocalDate date_Sortie);
+
+    @Query("SELECT f FROM Film f LEFT JOIN Seance s WHERE s.date = :date")
+    List<Film> findByDate(@Param("date") LocalDate date);
 }

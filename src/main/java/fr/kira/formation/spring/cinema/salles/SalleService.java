@@ -2,6 +2,9 @@ package fr.kira.formation.spring.cinema.salles;
 
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Service
 public class SalleService {
 
@@ -26,5 +29,10 @@ public class SalleService {
     public Iterable<Salle> findAll() {
         return repository.findAll();
     }
+
+    /*public List<Salle> findByDate(LocalDate date){
+        System.out.println(date);
+        return this.repository.findByDate(date);
+    }*/
 
 }
